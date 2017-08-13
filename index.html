@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="us-en">
+<head>
+
+	<meta charset="URTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Trivia Game</title>
+	<link rel='shortcut icon' type='image/x-icon' href='assets/images/favicon/favicon.ico' />
+	<link rel="stylesheet" type="text/css" src="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" src="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script type="text/Javascript" src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+	<h1>Totally Trivial Trivia!</h1>
+	<p>
+		Dude, wouldn't it be crazy if there were words here that were actually be helpful? Yeah! It would be! Crazy, huh? Like, maybe there could be an introduction to what this thing is, and maybe then it would say somthing about what the rules are, and maybe it would explain what the topics are, too! Crazy!
+	</p>
+	<div id="correct">Correct: <span>0</span></div>
+	<div id="incorrect">Incorrect: <span>0</span></div>
+	<div id="quiz-result"></div>
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Begin!</a>
+</div>
+
+<div class="container quiz">
+
+	<h2 class="quiz-question">Q1: This is the first question?</h2>
+ 	<ul data-quiz-question="1">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+ 	<h2 class="quiz-question">Q2: This is the second question?</h2>
+ 	<ul data-quiz-question="2">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q3: This is the third question?</h2>
+ 	<ul data-quiz-question="3">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q4: This is the fourth question?</h2>
+ 	<ul data-quiz-question="4">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q5: This is the fifth question?</h2>
+ 	<ul data-quiz-question="5">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q6: This is the sixth question?</h2>
+ 	<ul data-quiz-question="6">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q7: This is the seventh question?</h2>
+ 	<ul data-quiz-question="7">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q8: This is the eigth question?</h2>
+ 	<ul data-quiz-question="8">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q9: This is the nineth question?</h2>
+ 	<ul data-quiz-question="9">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+	<h2 class="quiz-question">Q10: This is the tenth question?</h2>
+ 	<ul data-quiz-question="10">
+    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
+    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
+    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
+    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
+ 	</ul>
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+
+</html>
