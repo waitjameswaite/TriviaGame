@@ -16,7 +16,7 @@
 
 <body>
 
-<div id="mySidenav" class="sidenav">
+<!-- <div id="mySidenav" class="sidenav">
 	<h1>Totally Trivial Trivia!</h1>
 	<p>
 		Dude, wouldn't it be crazy if there were words here that were actually be helpful? Yeah! It would be! Crazy, huh? Like, maybe there could be an introduction to what this thing is, and maybe then it would say somthing about what the rules are, and maybe it would explain what the topics are, too! Crazy!
@@ -25,94 +25,205 @@
 	<div id="incorrect">Incorrect: <span>0</span></div>
 	<div id="quiz-result"></div>
 	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Begin!</a>
-</div>
+</div> -->
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Totally Trivial Trivia</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <div class="container quiz">
 
 	<h2 class="quiz-question">Q1: This is the first question?</h2>
- 	<ul data-quiz-question="1">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="1">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
  	<h2 class="quiz-question">Q2: This is the second question?</h2>
- 	<ul data-quiz-question="2">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="2">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q3: This is the third question?</h2>
- 	<ul data-quiz-question="3">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="3">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q4: This is the fourth question?</h2>
- 	<ul data-quiz-question="4">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="4">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q5: This is the fifth question?</h2>
- 	<ul data-quiz-question="5">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="5">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q6: This is the sixth question?</h2>
- 	<ul data-quiz-question="6">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="6">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q7: This is the seventh question?</h2>
- 	<ul data-quiz-question="7">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="7">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q8: This is the eigth question?</h2>
- 	<ul data-quiz-question="8">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="8">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q9: This is the nineth question?</h2>
- 	<ul data-quiz-question="9">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="9">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 	<h2 class="quiz-question">Q10: This is the tenth question?</h2>
- 	<ul data-quiz-question="10">
-    	<li class="quiz-answer" data-quiz-answer="a">a. Answer 01</li>
-    	<li class="quiz-answer" data-quiz-answer="b">b. Answer 02</li>
-    	<li class="quiz-answer" data-quiz-answer="c">c. Answer 03</li>
-    	<li class="quiz-answer" data-quiz-answer="d">d. Answer 04</li>
- 	</ul>
+	<form data-quiz-question="10">
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="a"> a. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="b"> b. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="c"> c. Answer</label>
+		</div>
+		<div class="radio">
+			<label><input type="radio" name="optradio" class="quizAnswer" value="d"> d. Answer</label>
+		</div>
+	</form>
 
 </div>
 
 <script>
-
 </script>
 
 </body>
