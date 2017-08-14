@@ -4,3 +4,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+.pos-f-t #timer {
+	font-size: 18pt;
+	font-color: red;
+}
