@@ -1,20 +1,34 @@
-// var Quiz = function(){
-//   var self = this;
-// }
-// var quiz = new Quiz();
-// quiz.init();
+// Initial document.ready function
+$(document).ready(function(){
 
-var quiz = {
-  time: 180;
-  numCorrect: 0;
-  numIncorrect: 0;
-  numComplete: 0;
-  numIncomplete: 0;
+  alert("This Javascript is working.");
 
-  startTimer function() {
-    $("#startTimer").on("click", ) {
-      for (i = this.time; i >= 0; i--;)
-        $("#timer").html("i");
-    };
+  var quiz = {
+    time: 180;
+    numCorrect: 0;
+    numIncorrect: 0;
+    numComplete: 0;
+    numIncomplete: 0;
+    countDown: function(){
+      
+    }
+
   }
-}
+
+
+    // startTimer function() {
+    //   $("#startTimer").on("click", ) {
+    //     for (i = this.time; i >= 0; i--;)
+    //       $("#timer").html("i");
+    //   };
+    // }
+
+
+  $("#startTimer").on("click", function() {
+    $("#questionaire").removeClass(".hidden");
+    $("#introText").addClass(".hidden");
+    $("#startTimer").addClass(".hidden");
+    quiz.countDown();
+  });
+
+});
