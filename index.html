@@ -49,6 +49,13 @@
 		<h3>When the timer hits "0", time's up! Good luck!</h3>
 	</div>
 
+	<div id="quizResults" class="hidden">
+		<h3>Your Results Are In!</h3>
+		<h3>Correct: <span id="correctQ"></span></h3>
+		<h3>Incorrect: <span id="incorrectQ"></span></h3>
+		<h3>Think you can do better? Click "Star Timer" and try again!</h3>
+	</div>
+
 	<div id="questionaire" class="hidden">
 		<h2 class="quiz-question">Q1: This is the first question?</h2>
 		<form data-quiz-question="1">
@@ -209,6 +216,8 @@
 				<label><input type="radio" name="Q10" class="quizAnswer" value="d"> d. Answer</label>
 			</div>
 		</form>
+
+		<button type="button" id="submitButton">Submit</button>
 	</div>
 
 </div>
