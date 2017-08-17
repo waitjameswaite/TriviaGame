@@ -1,4 +1,4 @@
-<em># What is that?</em>
+#What is that?
 
 <img src="assets/images/favicon-310.png"/>
 
