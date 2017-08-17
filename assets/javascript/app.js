@@ -2,14 +2,11 @@
 $(document).ready(function(){
 
 // The list of variables needed for the quiz
-  var time = 180;
+  var time = 60;
   var intervalID;
 
   var numCorrect = 0;
   var numIncorrect = 0;
-
-  // var numComplete = 0;
-  // var numIncomplete = 0;
 
 // Our timer countdown functions
   var countDown = function(){
@@ -24,9 +21,9 @@ $(document).ready(function(){
         }
       }
 
-// This function will run both when the "time === " as well as when the user clicks the "submit" button
+// This function will run both when the "time === 0" as well as when the user clicks the "submit" button
   function stopTimer() {
-    time = 180;
+    time = 60;
     $("#show-timer").html("<span>" + time + "</span>");
     clearInterval(intervalID);
   }
@@ -38,17 +35,17 @@ $(document).ready(function(){
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q2]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q2]:checked").val() == "b"){
         numCorrect++;
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q3]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q3]:checked").val() == "c"){
         numCorrect++;
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q4]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q4]:checked").val() == "d"){
         numCorrect++;
       } else {
         numIncorrect++;
@@ -58,17 +55,17 @@ $(document).ready(function(){
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q6]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q6]:checked").val() == "b"){
         numCorrect++;
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q7]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q7]:checked").val() == "c"){
         numCorrect++;
       } else {
         numIncorrect++;
       }
-      if ($("input[type='radio'][name=Q8]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q8]:checked").val() == "d"){
         numCorrect++;
       } else {
         numIncorrect++;
@@ -78,7 +75,7 @@ $(document).ready(function(){
       } else {
         numIncorrect++;
       }  
-      if ($("input[type='radio'][name=Q10]:checked").val() == "a"){
+      if ($("input[type='radio'][name=Q10]:checked").val() == "b"){
         numCorrect++;
       } else {
         numIncorrect++;
@@ -93,12 +90,13 @@ $(document).ready(function(){
     }
 
   $("#startTimer").click(function() {
-    alert("This jQuery button is working.");
     $("#questionaire").removeClass("hidden");
     $("#introText").addClass("hidden");
     $("#startTimer").addClass("hidden");
     $("#quizResults").addClass("hidden");
-    $("input[type='radio']").attr("checked", false);
+    // $("input[type='radio']").attr("checked", false);
+    // $(".radio input").removeAttr("checked");
+    // $(".radio").buttonset("refresh");
     numCorrect = 0;
     numIncorrect = 0;
     countDown();

@@ -1,6 +1,5 @@
 body {
   margin-top: 70px;
-  padding-bottom: 70px;
   padding: 20px;
   font-family: "Lato", sans-serif;
 }
@@ -10,3 +9,6 @@ body {
 	font-color: red;
 }
 
+#submitButton {
+	margin-bottom: 70px;
+}
