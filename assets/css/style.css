@@ -12,3 +12,8 @@ body {
 #submitButton {
 	margin-bottom: 70px;
 }
+
+.imageQuestion {
+	width: 300px;
+	height: 200px;
+}

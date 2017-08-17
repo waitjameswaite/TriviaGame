@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
 // The list of variables needed for the quiz
-  var time = 60;
+  var time = 120;
   var intervalID;
 
   var numCorrect = 0;
@@ -23,7 +23,7 @@ $(document).ready(function(){
 
 // This function will run both when the "time === 0" as well as when the user clicks the "submit" button
   function stopTimer() {
-    time = 60;
+    time = 120;
     $("#show-timer").html("<span>" + time + "</span>");
     clearInterval(intervalID);
   }

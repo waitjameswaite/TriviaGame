@@ -4,7 +4,7 @@
 
 	<meta charset="URTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Emoji Quiz</title>
+	<title>What is this?</title>
 	<link rel="stylesheet" type="text/css" src="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" src="assets/css/style.css">
@@ -21,10 +21,11 @@
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4 text-center">
     	<h1 class="text-white">`</h1>
-    	<h1 class="">Welcome to the <em>Emoji Quiz!</em></h1>
-    	<h4 class="">The quiz that tests your emoji knowledge!</h4>
-    	<h4 class="text-muted">Click the <span class="glyphicon glyphicon-menu-hamburger"></span> to close the instructions panel.<br>Click the "Start Timer" button to start the timer, located in the navbar.<br> Answer the 10 questions as fast as you can.<br> When the timer hits "0," time's up! Good Luck!</h4>
-    	<span class="text-muted">Revist these instructions at any time!</span>
+    	<h1 class="">Welcome to <em>"What is this?" !</em></h1>
+    	<h4 class="">The quiz that tests your ability to look at images!</h4>
+    	<h4 class="text-muted">Click the <span class="glyphicon glyphicon-menu-hamburger"></span> to close the instructions panel.<br>Click the "Start Timer" button to start the timer,<br> located in the navbar for your convenience.<br> Answer the 10 questions as fast as you can!<br> When the timer hits "0," time's up! Good Luck!</h4>
+    	<span class="text-muted">Revist these instructions at any time!</span><br>
+    	<span class="text-muted">Copyright &#169; 2017 James Waite</span>
     </div>
   </div>
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -32,8 +33,8 @@
 	  <button class="navbar-toggler btn btn-default navbar-btn" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="glyphicon glyphicon-menu-hamburger"></span>
 	  </button>  	
-	  <span class="navbar-brand text-muted" href="#"> Emoji Quiz</span>  
-	  <span class="navbar-brand" id="show-timer">60</span>
+	  <span class="navbar-brand text-muted" href="#"> What is this?</span>  
+	  <span class="navbar-brand" id="show-timer">120</span>
 	</div>
   </nav>
 </div>
@@ -46,7 +47,10 @@
 	<div id="introText">
 		<h3>Click the "Star Timer" button to begin the quiz!</h3>
 		<h3>The timer is located in the top nav bar.</h3>
-		<h3>When the timer hits "0", time's up! Good luck!</h3>
+		<h3>When the timer hits "0", time's up!</h3>
+		<h3>You'll see an image, then four possible answers.</h3>
+		<br>
+		<h3>You have to decide <em>What is this?</em></h3>
 	</div>
 
 	<div id="quizResults" class="hidden">
@@ -57,163 +61,173 @@
 	</div>
 
 	<div id="questionaire" class="hidden">
-		<h2 class="quiz-question">Q1: This is the first question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fmedia.maginea.com%2Fm2%2Fproducts%2F00%2F00%2F94%2F13%2FM20000941338_2.jpg&f=1" alt="Question" style="width:300px;height:300px;"/>
 		<form data-quiz-question="1">
 			<div class="radio">
-				<label><input type="radio" name="Q1" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q1" class="quizAnswer" value="a"> a. Carafe</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q1" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q1" class="quizAnswer" value="b"> b. Vessel</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q1" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q1" class="quizAnswer" value="c"> c. Vase</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q1" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q1" class="quizAnswer" value="d"> d. Jug</label>
 			</div>
 		</form>
 
-	 	<h2 class="quiz-question">Q2: This is the second question?</h2>
+	 	<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.wood-database.com%2Fwp-content%2Fuploads%2Fred-oak-sealed.jpg&f=1" alt="Question" style="width:300px;height:300px;"/>
 		<form data-quiz-question="2">
 			<div class="radio">
-				<label><input type="radio" name="Q2" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q2" class="quizAnswer" value="a"> a. Maple</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q2" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q2" class="quizAnswer" value="b"> b. Oak</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q2" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q2" class="quizAnswer" value="c"> c. Buckeye</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q2" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q2" class="quizAnswer" value="d"> d. Ash</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q3: This is the third question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dogwallpapers.net%2Fwallpapers%2Fcute-hokkaido-dog-wallpaper.jpg&f=1" alt="Question" style="width:300px;height:250px;"/>
 		<form data-quiz-question="3">
 			<div class="radio">
-				<label><input type="radio" name="Q3" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q3" class="quizAnswer" value="a"> a. Hot Dog</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q3" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q3" class="quizAnswer" value="b"> b. A Good Boy</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q3" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q3" class="quizAnswer" value="c"> c. Dog</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q3" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q3" class="quizAnswer" value="d"> d. Pupper</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q4: This is the fourth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.swimbabes.co.uk%2Fmedia%2Fcatalog%2Fproduct%2Fcache%2F1%2Fimage%2F1200x%2F9df78eab33525d08d6e5fb8d27136e95%2Fk%2Fi%2Fkids-crocs-cayman-in-navy-05.8.jpg&f=1" alt="Question" style="width:300px;height:300px;"/>
 		<form data-quiz-question="4">
 			<div class="radio">
-				<label><input type="radio" name="Q4" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q4" class="quizAnswer" value="a"> a. Shoes</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q4" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q4" class="quizAnswer" value="b"> b. Galoshes</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q4" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q4" class="quizAnswer" value="c"> c. Foot Protection</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q4" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q4" class="quizAnswer" value="d"> d. Sandals</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q5: This is the fifth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fcliparts.co%2Fcliparts%2F8Tx%2FrGg%2F8TxrGgnTp.jpg&f=1" alt="Question" style="width:300px;height:300px;"/>
 		<form data-quiz-question="5">
 			<div class="radio">
-				<label><input type="radio" name="Q5" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q5" class="quizAnswer" value="a"> a. Notation</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q5" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q5" class="quizAnswer" value="b"> b. Language</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q5" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q5" class="quizAnswer" value="c"> c. Music</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q5" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q5" class="quizAnswer" value="d"> d. The Begining of Mozart's Fifth Sonata</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q6: This is the sixth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://i.ytimg.com/vi/916EO8YKFtU/maxresdefault.jpg" alt="Question" style="width:300px;height:200px;"/>
 		<form data-quiz-question="6">
 			<div class="radio">
-				<label><input type="radio" name="Q6" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q6" class="quizAnswer" value="a"> a. Cindy Laupr</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q6" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q6" class="quizAnswer" value="b"> b. Bonnie Tyler</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q6" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q6" class="quizAnswer" value="c"> c. Tammy Faye Bakker</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q6" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q6" class="quizAnswer" value="d"> d. Kim Carnes</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q7: This is the seventh question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="http://pre12.deviantart.net/b144/th/pre/f/2014/053/0/6/jack_pose_45_by_aitoresencial-d77knta.png" alt="Question" style="width:300px;height:200px;"/>
 		<form data-quiz-question="7">
 			<div class="radio">
-				<label><input type="radio" name="Q7" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q7" class="quizAnswer" value="a"> a. Something a kid drew in the back of a notebook in 6th Grade</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q7" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q7" class="quizAnswer" value="b"> b. Character, Anime</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q7" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q7" class="quizAnswer" value="c"> c. A PNG File</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q7" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q7" class="quizAnswer" value="d"> d. Furry</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q8: This is the eigth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="http://3.bp.blogspot.com/-FFN0GnGuv1Q/T4ERISH9ojI/AAAAAAAABGc/o9W5fwXVRZA/s1600/water+blue+by+maceme+wallpaper.jpg" alt="Question"  style="width:300px;height:220px;"/>
 		<form data-quiz-question="8">
 			<div class="radio">
-				<label><input type="radio" name="Q8" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q8" class="quizAnswer" value="a"> a. H20</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q8" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q8" class="quizAnswer" value="b"> b. Water</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q8" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q8" class="quizAnswer" value="c"> c. The View From Inside A Pool</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q8" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q8" class="quizAnswer" value="d"> d. Wetness</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q9: This is the nineth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=https%3A%2F%2F68.media.tumblr.com%2F668f8fa044b09642396ee8be9846b449%2Ftumblr_olspqaVPMy1u9ru6ro1_500.png&f=1" alt="Question" style="width:250px;height:300px;"/>
 		<form data-quiz-question="9">
 			<div class="radio">
-				<label><input type="radio" name="Q9" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q9" class="quizAnswer" value="a"> a. Me</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q9" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q9" class="quizAnswer" value="b"> b. A Meme</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q9" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q9" class="quizAnswer" value="c"> c. Several panels with text and images in an escalating manner</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q9" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q9" class="quizAnswer" value="d"> d. An Existential Question</label>
 			</div>
 		</form>
 
-		<h2 class="quiz-question">Q10: This is the tenth question?</h2>
+		<h2 class="quiz-question">What is this?</h2>
+		<img class="imageQuestion" src="https://images.duckduckgo.com/iu/?u=http%3A%2F%2F4vector.com%2Fi%2Ffree-vector-close-button-red_101555_Close_Button_red.png&f=1" alt="Question" style="width:300px;height:300px;"/>
 		<form data-quiz-question="10">
 			<div class="radio">
-				<label><input type="radio" name="Q10" class="quizAnswer" value="a"> a. Answer</label>
+				<label><input type="radio" name="Q10" class="quizAnswer" value="a"> a. x</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q10" class="quizAnswer" value="b"> b. Answer</label>
+				<label><input type="radio" name="Q10" class="quizAnswer" value="b"> b. X</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q10" class="quizAnswer" value="c"> c. Answer</label>
+				<label><input type="radio" name="Q10" class="quizAnswer" value="c"> c. [X]</label>
 			</div>
 			<div class="radio">
-				<label><input type="radio" name="Q10" class="quizAnswer" value="d"> d. Answer</label>
+				<label><input type="radio" name="Q10" class="quizAnswer" value="d"> d. (x)</label>
 			</div>
 		</form>
 
